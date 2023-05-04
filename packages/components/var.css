@@ -1,0 +1,12 @@
+:root{
+    color-scheme: light;
+    --rl-color-white: #ffffff;
+    --rl-color-black: #000000;
+    --rl-color-primary: #409eff;
+    --rl-color-success: #67c23a;
+    --rl-color-warning: #e6a23c;
+    --rl-color-danger: #f56c6c;
+    --rl-color-error: #f56c6c;
+    --rl-color-info: #909399;
+    --rl-bg-color: #ffffff;
+}
