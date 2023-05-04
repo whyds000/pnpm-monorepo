@@ -23,13 +23,7 @@ export function decrypt(ciphertext: string): string {
 
   return plaintext;
 }
-/**
- * 对字符串进行MD5加密
- * @param {string} str 待加密的字符串
- * @returns {string} 加密后的字符串
- * @description 用于密码单向加密
- */
-export function md5(str:string): string{
-  const hash = CryptoJS.MD5(str).toString();
-  return hash
+//md5单向加密
+export function md5(str:string){
+    return CryptoJS.MD5(str).toString()
 }
