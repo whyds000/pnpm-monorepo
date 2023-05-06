@@ -1,7 +1,7 @@
 export default [
    {
     enName: "admin",
-    cnName: "admin",
+    cnName: "模板",
     root: "admin",
     projectKey: "admin",
   }
