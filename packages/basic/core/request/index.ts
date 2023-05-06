@@ -58,7 +58,7 @@ class rlRequest {
         (res) => {
           //某个特定响应传入的拦截器
           if (config.interceptors?.responseInterceptor) {
-            config = config.interceptors.responseInterceptor(res)
+             config.interceptors.responseInterceptor(res)
           }
           resolve(res)
         },

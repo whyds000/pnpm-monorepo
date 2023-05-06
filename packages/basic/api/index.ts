@@ -1,2 +1,1 @@
-import { rlRequest } from "../core/request";
-
+export {}

@@ -61,6 +61,6 @@ async function getUserById(id: string) {
   width: 100px;
   height: 100px;
   user-select: none;
-  background-color: var(--rl-color-warning);
+  background-color: var(--app-color-warning);
 }
 </style>

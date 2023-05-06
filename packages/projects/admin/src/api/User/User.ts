@@ -18,7 +18,8 @@ class User extends Base{
                 responseInterceptor(data){
                     console.log(data);
                     return data
-                }
+                },
+                
             },
             
         })
