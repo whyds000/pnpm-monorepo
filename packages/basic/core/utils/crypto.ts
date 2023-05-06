@@ -1,6 +1,6 @@
-import * as CryptoJS from 'crypto-js';
+import * as CryptoJS from 'crypto-js'
 
-import {SECRET_KEY} from '../constant'
+import { SECRET_KEY } from '../constant'
 
 /**
  * 对字符串进行AES加密
@@ -8,8 +8,8 @@ import {SECRET_KEY} from '../constant'
  * @returns {string} 加密后的字符串
  */
 export function encrypt(str: string): string {
-  const ciphertext = CryptoJS.AES.encrypt(str, SECRET_KEY).toString();
-  return ciphertext;
+  const ciphertext = CryptoJS.AES.encrypt(str, SECRET_KEY).toString()
+  return ciphertext
 }
 
 /**
@@ -18,12 +18,12 @@ export function encrypt(str: string): string {
  * @returns {string} 解密后的字符串
  */
 export function decrypt(ciphertext: string): string {
-  const bytes = CryptoJS.AES.decrypt(ciphertext, SECRET_KEY);
-  const plaintext = bytes.toString(CryptoJS.enc.Utf8);
+  const bytes = CryptoJS.AES.decrypt(ciphertext, SECRET_KEY)
+  const plaintext = bytes.toString(CryptoJS.enc.Utf8)
 
-  return plaintext;
+  return plaintext
 }
-//md5单向加密
-export function md5(str:string){
-    return CryptoJS.MD5(str).toString()
+// md5单向加密
+export function md5(str: string) {
+  return CryptoJS.MD5(str).toString()
 }

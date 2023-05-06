@@ -1,4 +1,3 @@
-
 /**
  * @class StorageUtil
  * @description 本地存储工具类
@@ -17,25 +16,29 @@
  * @returns {StorageUtil} 本地存储工具对象
  */
 class StorageUtil {
-  private storage: Storage;
+  private storage: Storage
   constructor(storage: Storage) {
-    this.storage = storage;
+    this.storage = storage
   }
+
   setItem(key: string, value: any): void {
-    this.storage.setItem(key, JSON.stringify(value));
+    this.storage.setItem(key, JSON.stringify(value))
   }
+
   getItem<T>(key: string): T | null {
-    const value = this.storage.getItem(key);
-    if (value === null) {
-      return null;
-    }
-    return JSON.parse(value) as T;
+    const value = this.storage.getItem(key)
+    if (value === null)
+      return null
+
+    return JSON.parse(value) as T
   }
+
   removeItem(key: string): void {
-    this.storage.removeItem(key);
+    this.storage.removeItem(key)
   }
+
   clear(): void {
-    this.storage.clear();
+    this.storage.clear()
   }
 }
 
@@ -50,7 +53,7 @@ class StorageUtil {
  * ```
  * @description 本地存储
  */
-const localUtils=new StorageUtil(localStorage)
+const localUtils = new StorageUtil(localStorage)
 
 /**
  * sessionStorage
@@ -62,8 +65,8 @@ const localUtils=new StorageUtil(localStorage)
  * sessionUtils.clear();
  * ```
  */
-const sessionUtils=new StorageUtil(sessionStorage)
+const sessionUtils = new StorageUtil(sessionStorage)
 export {
   localUtils,
-  sessionUtils
+  sessionUtils,
 }

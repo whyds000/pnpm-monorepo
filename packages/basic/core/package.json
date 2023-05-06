@@ -2,17 +2,17 @@
   "name": "rl_basic_core",
   "version": "1.0.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "happy-dom": "^9.10.8"
-  },
   "dependencies": {
     "vitest": "^0.31.0"
+  },
+  "devDependencies": {
+    "happy-dom": "^9.10.8"
   }
 }

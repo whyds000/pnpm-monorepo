@@ -1,3 +1,3 @@
 import _ from 'lodash-es'
 
-export {_}
+export { _ }
