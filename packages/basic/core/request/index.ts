@@ -3,21 +3,6 @@ import axios from 'axios'
 
 import type { rlRequestConfig, rlRequestInterceptor } from './types'
 
-/**
- * @description: 封装axios
- * @param {rlRequestConfig} config
- * @return {*} 实例
- * @example
- * ```ts
- * import { rlRequest } from 'rl-request'
- * const request = new rlRequest({ baseURL: '/', timeout: 1000 ,interceptors:{requestInterceptor:config=>config,responseInterceptor:data=>data,requestInterceptorCatch:err=>err,responseInterceptorCatch:err=>err}})
- * request.get('/get')
- * request.post('/post')
- * request.delete('/delete')
- * request.patch('/patch')
- * request.put('/put')
- * ```
- */
 class RlRequest {
   instance: AxiosInstance
   interceptors?: rlRequestInterceptor
@@ -54,7 +39,7 @@ class RlRequest {
     return new Promise((resolve, reject) => {
       // 某个特定请求传入的拦截器
       if (config.interceptors?.requestInterceptor)
-        config = config.interceptors.requestInterceptor(config)
+        config = config.interceptors.requestInterceptor(config) as rlRequestConfig<T>
 
       this.instance.request<any, T>(config).then(
         (res) => {

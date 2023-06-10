@@ -1,8 +1,9 @@
 export default [
-   {
-    enName: "admin",
-    cnName: "模板",
-    root: "admin",
-    projectKey: "admin",
-  }
+  {
+    enName: 'fucker',
+    cnName: '日你的温',
+    root: 'fucker',
+    projectKey: 'fucker',
+  },
+
 ]

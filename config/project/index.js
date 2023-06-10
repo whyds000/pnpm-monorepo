@@ -1,3 +1,3 @@
-import allList from "./project-default.js";
+import allList from './project-default.js'
 
 export default [...allList]
