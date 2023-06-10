@@ -19,4 +19,4 @@ pnpm create vite <项目名称>
 
 然后在 `config/project/project-list` 文件按照例子创建项目目录元素
 
-* 把项目包的 package.json 的 name 改为 `@projects/xxx` 
+* 把项目包的 package.json 的 name 改为 `@projects/xxx`
